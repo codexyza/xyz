@@ -1,0 +1,259 @@
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) { }
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) { }
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) { }
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) { }
+
+
+
+
+
+
+/* Extra small devices (portrait phones, less than 576px) */
+@media (max-width: 575px) {
+    .noti .dropdown-menu{
+
+        left: 0 !important;
+        
+      }
+      
+ }
+
+/* Small devices (landscape phones, less than 768px) */
+@media (max-width: 767px) {
+    .receiveMoney .tipsReceive{
+        transform: translate(0)
+    }
+    .convertMoney .convert-receive-section{
+        display: block
+    }
+    .convertMoney .convert-receive-section .arrows{
+        position: relative;
+        margin-bottom: 40px;
+    z-index: 101;
+    transform: rotate(90deg) translateX(-25px) translateY(25px);
+    }
+    .convertMoney form .convert-line{
+        z-index: 100; 
+        }
+    .convertMoney .convert-receive-section .convert,
+    .convertMoney .convert-receive-section .receive{
+        padding: 15px 0;
+        position: relative;
+        z-index: 1001;
+        background: #fff;
+    }
+    .convertMoney .you-are .you-are-arrow,
+
+    .convertMoney .confirm-convert .convertToreceive{
+        z-index: 104
+    }
+    .convertMoney .confirm-convert .button{
+        z-index: 105
+    }
+    .convertMoney .confirm-convert .convertToreceive{
+        width: 100%;
+        text-align: center
+    }
+ }
+
+/* Medium devices (tablets, less than 992px) */
+@media (max-width: 991px) { 
+    .cbp-spmenu-left{
+        left: -200px
+    }
+    .nav-bar,
+    .page-wrapper{
+        left: 0;
+        width: 100%
+    }
+    button.toggle-menu{
+        display: block;
+        left: 200px
+    }
+    .dashboard .yourProfile{
+        margin-top: 50px
+    }
+    .walletPage .walletRight{
+        margin-top: 50px
+    }
+    .nav-body{
+        position: relative;
+        top: -60px
+    }
+}
+
+/* Large devices (desktops, less than 1200px) */
+@media (max-width: 1199px) { }
+
+
+
+/* Extra small devices (portrait phones, less than 576px) */
+@media (max-width: 575px) {
+    .walletPage{
+    }
+    .walletPage .walletRight .wallet-buttons a{
+        font-size: 13px;
+        margin-right: 5px;
+        padding: 5px 10px;
+        line-height: 20px;
+ 
+    }
+    .walletPage .walletLeft{
+        padding: 20px 10px
+    }
+    .walletPage .walletLeft h6, .walletPage .walletLeft h5{
+        font-size: 13px
+    }
+    .walletPage .walletLeft .php-coin-logo img{
+        max-width: 30px
+    }
+    .walletPage .walletRight .wallet-buttons a{
+        margin-bottom: 10px
+    }
+    .sendMoney form label, .receiveMoney form label{
+        display: block
+    }
+    .sendMoney form input, .receiveMoney form input{
+        display: block;
+        width: 100%
+    }
+    .sendMoney form .pin-code{
+        width: 100%
+    }
+    .sendMoney form .pin-code input{
+        width: 100%
+    }
+    .sendMoney form .pin-code i{
+        right: 0;bottom: 10px
+    }
+    .sendMoney button, .receiveMoney button{
+        transform: translateX(-50%);
+        margin-left: 50%;
+        left: 0
+    }
+    .accountSetting .nav-tabs .nav-item a{
+        font-size: 10px;
+        padding: 5px;
+    }
+    #basicInformation .basic label,
+    #changePassword .pass label,
+     #apiCredentials .api label{
+         display: block;
+         
+     }
+     #basicInformation .basic input,
+     #changePassword .pass input,
+      #apiCredentials .api input,
+      #basicInformation .basic select{
+          width: 100%
+      }
+      #changePassword .pass small, #apiCredentials .api small{
+          left: 0;
+          font-size: 10px;
+          width: 100%
+      }
+      #apiCredentials .papi p{
+          font-size: 12px
+      }
+      #apiCredentials .papi p:last-child{
+          font-size: 12px;
+      }
+      .convertMoney .you-are .you-are-convert .you-are-coin input{
+          width: 44px
+      }
+      .convertMoney .you-are .you-are-img{
+          max-width: 40px;
+          position: relative;
+          top: 10px;
+      }
+      #changePassword .pass i,
+#apiCredentials .api i,
+#basicInformation .basic i{
+  left: 10px;
+  top: 37px;
+}
+   
+ }
+@media (max-width: 400px) { 
+    .noti .dropdown-menu{
+        width: 250px
+    }
+    .dashboard .yourProfile .your-profile-php, .dashboard .yourProfile .your-profile-usd{
+        padding: 0 15px
+    }
+    .dashboard .yourProfile .your-profile-php .your-profile-php-name span, .dashboard .yourProfile .your-profile-usd .your-profile-usd-name span{
+        font-size: 17px;
+        margin-left: 5px
+    }
+    .dashboard .yourProfile .your-profile-php h6, .dashboard .yourProfile .your-profile-usd h6{
+        font-size: 17px
+    }
+    .dashboard .yourProfile{
+        padding-bottom: 50px
+    }
+    .accountSetting .nav-tabs{
+        flex-direction: column;
+    }
+    .accountSetting .nav-tabs .nav-item{
+        width: 100%;
+        font-size: 14px
+    }
+    #apiCredentials-tab{
+        padding:.5rem 1rem
+    }
+    .convertMoney .you-are{
+        flex-direction: column;
+        align-items: center;
+        background: #F6F7FA;
+        position: relative;
+        z-index: 101
+
+    }
+    .convertMoney .you-are .you-are-convert,
+    .convertMoney .you-are .you-are-receive {
+        transform: translateX(0);
+    }
+    .convertMoney .you-are .you-are-arrow{
+        position: static;
+        transform: translate(0) rotate(90deg);
+        background: #F6F7FA;
+        
+    }
+    .convertMoney .you-are .you-are-receive .you-are-usd{
+        text-align: right
+    }
+    .convertMoney .you-are .you-are-text{
+        order: 1
+    }
+    .convertMoney .you-are .you-are-img{
+        order: 2
+    }
+    .page-wrapper{
+        padding: 0
+    }
+    .top-select-box a .select-menu-title{
+        font-size: 20px;
+    }
+    .select-inline{
+        padding-left: 15px
+    }
+}
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) and (max-width: 767px) { }
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) and (max-width: 991px) { } 
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) and (max-width: 1199px) { }
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) { }

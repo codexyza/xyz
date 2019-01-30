@@ -1,0 +1,1280 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700');
+*{
+  padding: 0;
+  margin: 0
+}
+body{
+  font-family: 'Open Sans', sans-serif; 
+  background: #f6f7fa
+  
+}
+
+ /* start navBar styles */
+ .nav-bar{
+  background: rgb(255, 255, 255);
+  box-shadow: 0 2px 0 0 #eee;
+  padding: 13px 0;
+  position: fixed;
+  width: calc(100% - 200px);
+  left: 200px;
+  z-index: 10000;
+  top: 0
+ }
+ button.toggle-menu{
+   display: none
+ }
+ .nav-bar .row >div{
+ }
+  .nav-bar .sign-out{
+    color: #ff8000;
+    padding: 0px 24px;
+  }
+
+
+.person-menu .dropdown div[id="dropdownMenuButton"]>img{
+  width: 40px;
+  height: 40px;
+  object-fit: cover;
+  border-radius: 50%;
+  padding: 1px;
+  border: 1px solid #eee;
+  margin-right: 3px
+}
+
+.person-menu .dropdown div[id="dropdownMenuButton"]>span{
+ font-weight: 600
+}
+.person-menu .dropdown .dropdown-menu{
+  right: 0;
+  width: 250px;
+  padding-bottom: 0
+}
+.person-menu .dropdown .dropdown-menu-profile-img{
+  width: 70px;
+  height: 90px;
+  margin-right: 15px;
+  overflow: hidden;
+  border-radius: 20%;
+  border: 1px solid #eee;
+  padding: 3px;
+
+}
+.person-menu .dropdown .dropdown-menu-profile-img img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 20%;
+  
+}
+.person-menu .dropdown .dropdown-menu li:first-child{
+  padding: 0.25rem 1rem;
+  display: flex;
+  border-bottom: 1px solid #eee;
+  padding-bottom: 20px;
+}
+.person-menu .dropdown .dropdown-menu li .dropdown-item{
+  padding: 15px 1.5rem;
+  border-bottom: 1px solid #eee;
+  outline: 0
+  
+}
+.person-menu .dropdown .dropdown-menu li .dropdown-item:active,
+.person-menu .dropdown .dropdown-menu li .dropdown-item:focus
+{
+  background: #fff;
+  color: #212529
+}
+.person-menu .dropdown .dropdown-menu ul{
+  margin: 0
+}
+.person-menu .dropdown .dropdown-menu li svg{
+  margin-right: 10px;
+  position: relative;
+  bottom: -4px
+}
+
+.person-menu .dropdown .dropdown-menu .member-details{
+text-align: center;
+padding: 15px 0
+}
+.person-menu .dropdown .dropdown-menu .member-details .member-name{
+  font-size: 20px;
+}
+.person-menu .dropdown .dropdown-menu .member-details .member-email{
+  font-size: 12px;
+  color: #616b82
+}
+.dropdown-toggle{
+  cursor: pointer
+}
+.noti .dropdown-toggle{
+position: relative;
+left: 5px
+}
+.noti .dropdown-toggle span{
+  position: absolute;
+  top: 3px;
+  right: 18px;
+  background: #ff8000;
+  color: #fff;
+  width: 17px;
+  height: 17px;
+  font-size: 11px;
+  border-radius: 50%;
+  border: 2px solid #fff
+}
+.noti .dropdown-toggle::after{
+  border: 0
+}
+.noti .dropdown-toggle i{
+  font-size: 25px
+}
+.noti .dropdown-menu{
+  right: 0;
+  width: 300px;
+  left: -100% !important;
+  padding: 0;
+}
+
+.noti .dropdown{
+  padding-top: 8px;
+}
+.noti .dropdown .dropdown-menu a{
+  font-size: 14px;
+  white-space: pre-wrap;
+  padding: 15px 15px;
+}
+.noti .dropdown .dropdown-menu a{
+  border: 2px solid transparent;
+  background: transparent;
+  border-bottom: 2px solid #eee;
+  
+}
+.noti .dropdown .dropdown-menu a:hover{
+  border: 2px solid #ff8000;
+  color: #666
+}
+.noti .dropdown .dropdown-menu a.see-all{
+  font-size: 15px;
+  width: 100%;
+  display: block;
+  padding: 10px 0;
+  color: #ff8000;
+  padding-left: 15px
+  
+}
+.noti .dropdown .dropdown-menu a.see-all:hover{
+  text-decoration: none;
+}
+ /* End navBar styles */
+/* Start page wrapper styles */
+ .page-wrapper{
+  width: calc(100% - 200px);
+  position: relative;
+  left: 200px;
+  margin-top: 100px;
+  padding-left: 15px;
+  padding-right: 30px
+}
+/* End page wrapper styles */
+/* Start dashboard styles */
+.dashboard{
+padding-top: 30px;
+padding-bottom: 100px
+}
+.dashboard .price-charts{
+background: #fff;
+padding-bottom: 30px
+}
+.dashboard .price-charts .price-charts-head {
+  padding: 20px;
+  color: #0e1a35;
+  font-size: 20px
+}
+.dashboard .price-charts .price-charts-head h3{
+  font-size: 20px
+}
+.dashboard .price-charts .price-charts-php-coin{
+  display: flex;
+  padding: 0 20px;
+  justify-content: space-between;
+  margin-bottom: 10px
+}
+.dashboard .price-charts .price-charts-php-coin span{
+  color: #fff;
+  background: #ff8000;
+  display: block;
+  width: 38px;
+  height: 22px;
+  text-align: center;
+  font-size: 15px;
+}
+.dashboard .price-charts .price-charts-php-coin h4{
+  color: #8492af
+}
+.amcharts-export-menu .export-main{
+  left: -30px;
+  position: relative
+}
+.dashboard .price-charts .coin-percent{
+  color: #8ccd1b;
+  font-size: 14px;
+  padding-left: 20px;
+  
+}
+#chartdiv {
+  width: 100%;
+  height: 300px;
+  margin-top: 30px
+}							
+a[href="http://www.amcharts.com"]{
+  display: none !important
+}
+.dashboard .yourProfile{
+  background: #fff;
+  border: 1px solid rgba(132, 146, 175, 0.26);
+  box-shadow: 0 2px rgba(136, 136, 136, 0.1);
+}
+  .dashboard .yourProfile h3{
+    font-size: 16px;
+    color: #ff8000;
+    padding: 20px 30px 0;
+    
+  }
+  .dashboard .yourProfile hr{
+    border-top: 1px solid rgba(136, 136, 136, 0.1);
+  }
+  .dashboard .yourProfile .amount{
+    text-align: center
+    
+  }
+    .dashboard .yourProfile .amount .amount-number{
+    color: #4e4e4e;
+    margin-bottom: 5px;
+    font-size: 30px;
+    font-weight: 600;
+  }
+  .dashboard .yourProfile .amount span{
+    display: block;
+    color: #898888;
+    font-size: 12px
+  }
+
+  .dashboard .yourProfile .your-profile-php ,
+  .dashboard .yourProfile .your-profile-usd{
+    display: flex;
+    justify-content: space-between;
+    padding: 0 30px;
+  }
+  .dashboard .yourProfile .your-profile-php h6 ,
+  .dashboard .yourProfile .your-profile-usd h6 {
+    margin-bottom: 0;
+    color: #8492af;
+    font-size: 20px;
+    font-weight: 600
+  }
+  .dashboard .yourProfile .your-profile-php .your-profile-php-number span{
+    color: #5584ff
+  }
+  .dashboard .yourProfile .your-profile-usd{
+    padding-bottom: 30px
+  }.dashboard .yourProfile .your-profile-php .your-profile-php-name span,
+  .dashboard .yourProfile .your-profile-usd .your-profile-usd-name span{
+    color: #8492af;
+    font-size: 20px;
+    margin-left: 10px;
+    font-weight: 600
+    
+    
+  }
+  .dashboard .recentActivity {
+
+  }
+  .dashboard .recentActivity table{
+
+  }
+  .dashboard .recentActivity h2{
+    font-weight: 600;
+    margin: 20px 0
+  }
+  .dashboard .recentActivity table tr th{
+    text-align: center;
+    border-top: 0;
+    color: #ffffff;
+    font-weight: 600;
+    background: #4B67A7;
+    
+  }
+  .dashboard .recentActivity table tr td{
+    background: #fff;
+    text-align: center;
+    color: #8492af;
+    font-size: 15px;
+    border-right: 1px solid #d4d9e3;
+    padding: 15px 0;
+    vertical-align: middle;
+    min-width: 150px
+    
+  }
+  .dashboard .recentActivity table tr td .confirm{
+    color: #4bbbd3
+  }  .dashboard .recentActivity table tr td .pending{
+    color: #f7b063
+  }  .dashboard .recentActivity table tr td .complete{
+    color: #66ce4e
+  }
+  .dashboard .recentActivity table tr td img{
+    max-width: 30px;
+    margin-right: 10px
+  }
+  .dashboard .recentActivity table tr td:first-child{
+    border-left: 1px solid #d4d9e3
+  }
+/* End dashboard styles */
+/* Start accountSetting styles */
+.accountSetting{
+
+}
+
+.accountSetting button{
+  font-size: 14px;
+  border: 2px solid transparent;
+  transition: all 0.5s
+}
+.accountSetting button:hover{
+  border: 2px solid #ff8000;
+  background: transparent !important;
+  color: #222 !important
+}
+.accountSetting input{
+  font-size: 14px
+}
+.accountSetting .nav-tabs{
+  max-width: 550px;
+  align-items: center;
+}
+.accountSetting .nav-tabs .nav-item{
+  flex-basis: 25%;
+  text-align: center;
+  font-size: 11px;
+  background: #2489c5;
+  height: 50px;
+  font-weight: 600;
+  position: relative;
+}
+.accountSetting .nav-tabs .nav-item a{
+  color: #fff;
+  border: none;
+  height: 100%;
+  border-bottom: 3px solid #006ea6;
+  border-radius: 0;
+  transition: all 0.3s
+}
+#apiCredentials-tab{
+  padding-top: 10%;
+}
+.nav-tabs .nav-link:focus, .nav-tabs .nav-link:hover{
+  border-bottom: 5px solid #006ea6 !important;
+  }
+.nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active{
+  background: #3498d7;
+  border-bottom: 1px solid #006ea6 !important;
+  
+}
+.accountSetting .tab-content{
+  background: #fff;
+  padding-top: 60px;
+  padding-left: 30px;
+  padding-right: 30px
+  
+}
+/* End accountSetting styles */
+/* Start basicInformation styles */
+#basicInformation{
+  padding-bottom: 100px
+}
+#basicInformation .basic{
+  position: relative
+}
+#basicInformation .basic label{
+  width: 70px;
+  color: #3f3f3f;
+  font-size: 15px;
+  font-weight: 600;
+}
+#basicInformation .basic i{
+  position: absolute;
+  left: 87px;
+  top: 8px;
+  color: #888;
+  font-size: 15px
+}
+#basicInformation .basic input,
+#basicInformation .basic select{
+  display: inline-block;
+  width: calc(100% - 100px);
+  background: #f6f7fa;
+  border-radius: 0;
+  border:1px solid #c1c2de;
+  height: 30px;
+  padding-left: 42px
+}
+#basicInformation .basic select{
+  padding-left: 30px;
+}
+#basicInformation .basic select option{
+  max-width: 100%
+}
+#basicInformation  button[type="submit"]{
+  background: #ff8000;
+  width: 120px;
+  margin: auto;
+  color: #fff;
+  display: block;
+  border-radius: 50px;
+  margin-top: 30px
+}
+/* End basicInformation styles */
+/* Start updatePhoto styles */
+#updatePhoto{
+padding-bottom: 100px
+}
+#updatePhoto .uPtext{
+
+}
+#updatePhoto p{
+  color: #8e8e8e;
+  margin-bottom: 10px
+}
+.uPtext p:first-child{
+  color: #2489c5 !important;
+  margin-bottom: 30px !important;
+  font-weight: 600
+}
+#updatePhoto button[type="submit"]{
+  background: #ff8000;
+  width: 210px;
+  margin: 30px auto;
+  color: #fff;
+  display: block;
+  border-radius: 50px;
+}
+/* End updatePhoto styles */
+/* Start basicInformation styles */
+#basicInformation{
+  padding-bottom: 100px
+}
+#changePassword{
+  padding-bottom: 100px
+}
+#changePassword p{
+  position: relative;
+  top: -20px;
+  color: #2489c5;
+  font-weight: 600
+}
+#changePassword .pass,
+#apiCredentials .api{
+  position: relative;
+  
+}
+#changePassword .pass label,
+#apiCredentials .api label{
+  width: 140px;
+  color: #3f3f3f;
+  font-size: 14px;
+  font-weight: 600;
+}
+#changePassword .pass i,
+#apiCredentials .api i{
+  position: absolute;
+  left: 155px;
+  top: 8px;
+  color: #888;
+  font-size: 15px;
+}
+#changePassword .pass input,
+#apiCredentials .api input{
+  display: inline-block;
+  width: calc(100% - 200px);
+  background: #f6f7fa;
+  border-radius: 0;
+  border:1px solid #c1c2de;
+  height: 30px;
+  padding-left: 42px;
+  
+}
+#changePassword .pass small,
+#apiCredentials .api small
+{
+  position: relative;
+  left: 145px;
+  margin-top: 0;
+  width: calc(100% - 145px );
+}
+#changePassword  button,
+#apiCredentials  button
+{
+  background: #ff8000;
+  width: 170px;
+  margin: auto;
+  color: #fff;
+  display: block;
+  border-radius: 50px;
+  margin-top: 30px
+}
+/* End basicInformation styles */
+/* Start apiCredentials styles */
+#apiCredentials{
+  padding-bottom: 100px
+
+}
+#apiCredentials .papi{
+  margin-bottom: 50px
+}
+#apiCredentials .papi p{
+  color: #8e8e8e;
+  margin-bottom: 10px
+}
+#apiCredentials .papi p:first-child{
+  color: #2489c5 !important;
+  margin-bottom: 30px !important;
+  font-weight: 600
+}
+#apiCredentials .papi p:last-child{
+  color: #ff8000 !important;
+}
+#apiCredentials .api{
+
+}
+#apiCredentials .api small{
+  color: #fe6d6d !important;
+  margin-top: 2px;
+  font-size: 14px
+}
+#apiCredentials button{
+  width: 190px;
+}
+ .swal-footer{
+  display: flex;
+  justify-content: center
+}
+ .swal-button.swal-button--confirm{
+  background: #ff8000;
+  color: #fff
+}
+.swal-text{
+  text-align: center
+}
+/* End apiCredentials styles */
+
+/* Start SendMoney pages styles */
+.sendMoney{
+  padding: 30px;
+  background: #fff
+}
+.sendMoney {
+  position: relative
+}
+.sendMoney form  label,
+.receiveMoney form  label
+{
+  width: 90px;
+  color: #192c57;
+  font-size: 15px;
+  font-weight: 600;
+}
+.sendMoney form  label span{
+  color: #707070;
+  font-size: 13px
+}
+.sendMoney form  .pos-top{
+  margin-top: 5px
+}
+.sendMoney form  .pos-top label{
+  position: relative;
+  top: 5px
+}
+.sendMoney form  .pos-top input{
+  height: 50px;
+  position: relative;
+  top: -5px;
+}
+.sendMoney form .pin-code{
+  width: 310px;
+  position: relative
+}
+.sendMoney form .pin-code i{
+  position: absolute;
+  right: 12px;
+  bottom: 13px;
+  z-index: 200;
+  background: #fff;
+  color: #c3c3c3;
+  display: block;
+  height: 28px;
+  width: 30px;
+  line-height: 28px;
+  text-align: center;
+  border-left: 1px solid #b7b7b7;
+}
+.sendMoney form .pin-code label{
+  color: #000
+}
+.sendMoney form .pin-code input {
+  position: relative;
+  top: -9px;
+  width: 205px;
+  background: #d3dffa;
+  padding-right: 30px;
+  padding-left: 10px
+}
+.sendMoney form .pin-code input:focus{
+  background: #d3dffa
+  
+}
+.sendMoney form  input,
+.receiveMoney form  input{
+  display: inline-block;
+  width: calc(100% - 120px);
+  background: #f6f7fa;
+  border-radius: 0;
+  border:1px solid #c1c2de;
+  height: 30px;
+  font-size: 14px;
+  padding-left: 20px
+}
+.sendMoney form  input:focus,
+.receiveMoney form  input:focus
+{
+  background: #f6f7fa;
+  
+}
+.sendMoney  button,
+.receiveMoney button{
+  background: #ff8000;
+  color: #fff;
+  display: block;
+  border-radius: 50px;
+  margin-top: 20px;
+  font-size: 14px;
+  position: relative;
+  left: 85%;
+  transform: translateX(-50%);
+}
+/* End SendMoney pages styles */
+/* Start walletPage pages styles */
+.walletPage{
+}
+.walletPage .walletLeft{
+  background: #fff;
+  padding: 20px;
+  padding-bottom: 40px
+}
+.walletPage .walletLeft h6,
+.walletPage .walletLeft h5{
+  font-size: 15px;
+  font-weight: 600
+}
+.walletPage .walletLeft .php-coin-logo{
+  height: 100%;
+  display: flex;
+  align-items: center;
+
+}
+.walletPage .walletLeft .coins-buy span{
+  color: #1890cf
+}
+.walletPage .walletLeft .coins-sell span,
+.walletPage .walletRight h4.php-ww span{
+  color: #ef7222
+}
+.walletPage .walletLeft .coins-est span,
+.walletPage .walletRight h4.php-coin-number span{
+  color: #3eb52e
+}
+.walletPage .walletRight-head{
+  background: #ff8000;
+  padding: 5px 30px
+}
+.walletPage .walletRight{
+  background: #fff;
+  padding-bottom: 40px;
+  padding-top: 0;
+  padding-left: 0
+}
+.walletRight-body{
+  padding-left: 30px;
+  padding-right: 20px;
+  padding-top: 15px
+}
+.walletPage .walletRight h4{
+  font-size: 15px;
+  font-weight: 600
+}
+.walletPage .walletRight .wallet-buttons{
+margin-top: 20px;
+
+}
+.walletPage .walletRight .wallet-buttons a{
+  color: #fff;
+  border-radius: 50px;
+  font-size: 15px;
+  margin-right: 10px;
+  padding: 5px 15px;
+  line-height: 20px;
+  text-transform: capitalize;
+  cursor: pointer
+
+}
+.walletPage .walletRight .wallet-buttons a.send{
+  background: #31a0e0
+}
+.walletPage .walletRight .wallet-buttons a.recieve{
+  background: #e0bd31
+}
+.walletPage .walletRight .wallet-buttons a.addresses{
+  background: #40c33d
+}
+
+
+
+/* End walletPage pages styles */
+/* Start receiveMoney pages styles */
+.receiveMoney{
+  background: #fff;
+  padding: 20px 30px
+}
+.receiveMoney form label{
+  color: #000
+}
+.receiveMoney form button{
+  width: 180px;
+  margin-left: 80%
+}
+.receiveMoney .tipsReceive{
+  color: #8492af;
+  font-size: 15px;
+  transform: translateX(30%);
+  margin-top: 50px
+}
+.receiveMoney .tipsReceive h4{
+  font-size: 15px;
+  margin: 0;
+  margin-bottom: 15px
+}
+.receiveMoney .tipsReceive ol{
+  list-style: none;
+  line-height: 50px
+}
+.receiveMoney form label{
+  width: 150px
+}
+
+.receiveMoney form input{
+  width: calc(100% - 200px);
+}
+/* End receiveMoney pages styles */
+/* Start convertMoney pages styles */
+.convertMoney{
+
+}
+.convertMoney form{
+  position: relative
+}
+.convertMoney form .convert-line{
+  width: 3px;
+  height: 100%;
+  position: absolute;
+  left: 50%;
+  top: 0;
+  bottom: 0;
+  background: #5f81cd
+}
+.convertMoney .convert-receive-section{
+  background: #fff;
+  padding: 30px 30px;
+  display: flex;
+  padding-bottom: 100px
+}
+.convertMoney .convert-receive-section > div{
+  flex-basis: 50%
+}
+.convertMoney .convert-receive-section h4{
+  text-align: center;
+  font-size: 17px;
+  font-weight: 600;
+  text-transform: capitalize
+}
+
+.convertMoney .convert-receive-section .arrows{
+  position: absolute;
+  left: 50%;
+  width: 48px;
+  height: 60px;
+  background: #ffffff;
+  top: 44px;
+  transform: translateX(-50%)
+}
+.convertMoney .convert-receive-section .arrows img{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+
+.convertMoney .convert-receive-section .receive{
+padding-left: 25px
+}
+.convertMoney .convert-receive-section .receive .select-inline{
+  max-width: 350px;
+  margin: auto;
+  background: #f6f7fa;
+  border: 1px solid #c1c2de;
+}
+  .convertMoney .convert-receive-section .convert{
+    padding-right: 25px
+    
+  }
+  .convertMoney .convert-receive-section .conve-select{
+    height: 60px;
+    width: 100%;
+    margin-top: 15px;
+    display: flex;
+    justify-content: center
+  }
+
+
+  .convertMoney .convert-coin-currency,
+  .convertMoney .receive-coin-currency{
+    margin: auto;
+    width: 100%;
+    max-width: 350px;
+    margin-top: 30px;
+  }
+  .convertMoney .convert-coin-currency input[type="number"]{
+    border: none;
+    width: 80px;
+    outline: 0;
+    padding-right: 10px;
+    -moz-appearance: textfield;
+
+
+  }
+  .convertMoney .convert-coin-currency input[type=number]::-webkit-inner-spin-button, 
+  .convertMoney .convert-coin-currency input[type=number]::-webkit-outer-spin-button { 
+  -webkit-appearance: none; 
+  margin: 0; 
+}
+
+  .convertMoney .converter-coin input[type="number"]{
+    color: #ff8000
+  }
+  .convertMoney .converter-coin-to-usd input[type="number"]{
+    color: #222
+  }
+  .convert-coin-currency .converter-coin,
+  .receive-coin-currency .receiver-coin{
+    color: #ff8000;
+    
+  }
+  .convert-coin-currency .converter-coin-to-usd,
+  .receive-coin-currency .receiver-coin-to-usd{
+    color: #122143
+  }
+  .convert-coin-currency .converter-coin,
+  .receive-coin-currency .receiver-coin,
+  .convert-coin-currency .converter-coin-to-usd,
+  .receive-coin-currency .receiver-coin-to-usd{
+    display: flex;
+    justify-content: space-between;
+  }
+  .convert-coin-currency h5,
+  .receive-coin-currency h5{
+    font-weight: 600;
+    margin: 0
+  }
+  .convert-coin-currency hr,
+  .receive-coin-currency hr{
+    margin: 5px auto;
+    border-top: 4px solid #ff8000
+  }
+  .convertMoney .you-are{
+    display: flex;
+    position: relative;
+    justify-content: center;
+    padding: 20px 0
+  }
+  .convertMoney .you-are .you-are-arrow{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background: #F6F7FA;
+    height: 100%;
+    line-height: 6;
+  }
+  .convertMoney .you-are h3{
+    font-size: 13px;
+    color: #ff8000;
+    
+  }
+  .convertMoney .you-are .you-are-receive,
+  .convertMoney .you-are .you-are-convert{
+    display: flex;
+    
+    
+  }
+  .convertMoney .you-are .you-are-receive{
+    transform: translateX(50px);
+  }
+  .convertMoney .you-are .you-are-convert{
+    transform: translateX(-30px);
+  }
+  .convertMoney .you-are .you-are-receive .you-are-coin ,
+  .convertMoney .you-are .you-are-convert .you-are-coin {
+    color: #ff8000;
+    font-weight: 600;
+    font-size: 18px;
+    margin-bottom: 3px;
+
+  }
+  .convertMoney .you-are .you-are-convert .you-are-coin input{
+    width: 50px;
+    border: none;
+    background: none;
+    outline: 0;
+    color: #ff8000;
+    font-weight: 600;
+    font-size: 18px;
+  }
+  .convertMoney .you-are .you-are-receive .you-are-coin span ,
+  .convertMoney .you-are .you-are-convert .you-are-coin span{
+    padding: 0 4px
+  }
+  .convertMoney .you-are .you-are-receive .you-are-usd ,
+  .convertMoney .you-are .you-are-convert .you-are-usd{
+    color: #616b82;
+    font-size: 15px;
+    text-align: right
+  }
+  .convertMoney .you-are .you-are-receive .you-are-usd{
+    text-align: left
+  }
+  .convertMoney .you-are .you-are-text{
+    margin: 0 10px;
+    padding-top: 13px
+  }
+  .convertMoney .you-are .you-are-img{
+    max-width: 60px;
+
+  }
+  .convertMoney .you-are .you-are-img img{
+    width: 100%
+  }
+  .convertMoney  .confirm-convert{
+    background: #fff;
+    height: 195px;
+    
+  }
+  .convertMoney  .confirm-convert-inline{
+    position: relative;
+    z-index: 10000
+  }
+  .convertMoney  .confirm-convert .button{
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    top: 30px;
+  }
+
+.convertMoney .mod-header,
+.convertMoney .mod-footer{
+  border: none;
+  padding: 30px 0;
+display: flex;
+justify-content: center}
+
+
+.convertMoney .mod-body{
+padding-left: 10%;
+margin: 30px 0 10px
+}
+.convertMoney .mod-body p,
+.convertMoney .mod-body h3,
+.convertMoney .mod-body h5{
+  font-size: 15px
+}
+.convertMoney .mod-footer.button{
+  top: 0
+}
+.convertMoney .mod-body h3,
+.convertMoney .mod-body h5 span{
+  font-weight: 600;
+  word-wrap: break-word
+}
+.convertMoney .mod-body h5 span.amount-number{
+  padding: 0 5px
+}
+  .convertMoney  .confirm-convert .button button{
+    background: #ff8000;
+    width: 130px;
+    color: #fff;
+    display: block;
+    border-radius: 50px;
+    height: 35px;
+    font-size: 15px;
+    border: none;
+    outline: 0
+ 
+  }
+  .convertMoney  .confirm-convert .convertToreceive{
+    color: #848b9e;
+    position: absolute;
+    top: 110px;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 40px;
+    background: #fff;
+    padding-top: 5px;
+  }
+
+
+  /* Start activeAddresses styles */
+    /* Start activeAddresses styles */
+.activeAddresses{
+  background: #fff;
+  background: #fff;
+  padding: 50px 15px 200px;
+}
+.activeAddresses table{
+  margin-bottom: 70px;
+  color: #8492af
+}
+
+.activeAddresses .table th{
+  border: none;
+  background: #4B67A7;
+color: #fff
+}
+
+.activeAddresses .table td{
+  font-size: 15px;
+  min-width: 150px
+}
+.activeAddresses .table td:first-child{
+  font-size: 18px
+}
+.activeAddresses button {
+  background: #ff8000;
+  color: #fff;
+  display: block;
+  border-radius: 50px;
+  margin-top: 20px;
+  font-size: 16px;
+  border: none;
+  padding: 5px 30px;
+  position: relative;
+  left: 90%;
+  transform: translateX(-50%);
+  border: 2px solid transparent;
+
+
+}
+.activeAddresses button:hover{
+  border: 2px solid #ff8000;
+  background: transparent;
+  color: #8492af
+}
+    /* End activeAddresses styles */
+
+  .select-inline{
+    display: flex;
+    padding-left: 25px
+  }
+  .select-inline .coin-image{
+    width: 25px;
+    position: relative;
+    margin-right: 15px
+  }
+  .select-inline .coin-details{
+    padding: 10px 0
+  }
+  .select-inline .coin-image img{
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%)
+  }
+  .select-inline h5{
+    color: #ff8000;
+    font-size: 18px;
+    margin-bottom: 3px;
+  }
+  .select-inline h6{
+    font-size: 13px;
+    margin-bottom: 0;
+  }
+  .select-inline h6 .first{
+    color: #ff8000;
+    margin-right: 5px
+  }
+  .select-inline h6 .last{
+    color: #4b4b4b
+  }
+
+
+.custom-select-box-container {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  max-width: 350px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.custom-select-box-container .hide {
+  display: none;
+}
+.custom-select-box-container.clicked .container-select-box {
+  visibility: visible;
+}
+
+.top-select-box {
+  border: 1px solid #c1c2de;
+  display: inline-block;
+  width: 100%;
+  height: 60px
+}
+.top-select-box a {
+  display: block;
+  line-height: 1.6;
+  text-decoration: none;
+  position: relative;
+  background: #f6f7fa;
+  height: 100%;
+  color: #666
+  /* white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden; */
+}
+.top-select-box a .select-menu-title{
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 100%;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+
+}
+.top-select-box a:after {
+  display: block;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
+  content: "\f107";
+  font-family: 'FontAwesome', monospace;
+  position: absolute;
+  right: 16px;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+.clicked .top-select-box a:after{
+  content: "\f106";
+}
+.container-select-box {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  clip: auto;
+  background: #e0ece2;
+  visibility: hidden;
+  width: 100%
+}
+
+.content-select-box {
+  display: block;
+  width: 100%;
+  /* max-height: 160px;
+  overflow-y: scroll; */
+  z-index: 2;
+  position: relative;
+}
+.content-select-box::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  background-color: #F5F5F5;
+}
+.content-select-box::-webkit-scrollbar {
+  width: 6px;
+  background-color: #F5F5F5;
+}
+.content-select-box::-webkit-scrollbar-thumb {
+  background-color: #1e1e1e;
+}
+
+.list-select-box {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  background: white;
+}
+.list-select-box:before {
+  position: absolute;
+  left: 20px;
+  top: 0;
+}
+.list-select-box li {
+  display: block;
+}
+.list-select-box li a {
+  line-height: 1.6;
+  
+  text-decoration: none;
+  background: #f6f7fa;
+  display: block;
+  color: #1e1e1e;
+  /* white-space: nowrap;
+  max-width: 200px;
+  text-overflow: ellipsis;
+  overflow: hidden; */
+  height: 60px;
+  border: 1px solid #c1c2de;
+}
+/* .list-select-box li a:hover {
+  background: #62A170;
+  color: black;
+} */
+
+.sec-title{
+  font-size: 20px;
+  padding: 20px 0 15px;
+}
+nav[aria-label="breadcrumb"]{
+
+}
+nav[aria-label="breadcrumb"] .breadcrumb{
+  background: transparent
+}
+nav[aria-label="breadcrumb"] .breadcrumb{
+  padding-left: 0;
+}
+nav[aria-label="breadcrumb"] .breadcrumb .breadcrumb-item a{
+  color: #222;
+  font-weight: 600;
+}
+nav[aria-label="breadcrumb"] .breadcrumb .breadcrumb-item{
+  color: #ff8000
+}
+nav[aria-label="breadcrumb"] .breadcrumb .breadcrumb-item:first-child::before{
+  content: "\f0e4";
+  font: normal normal normal 14px/1 FontAwesome;
+  margin-right: 5px;
+  font-size: 20px
+}
+.modal-backdrop.show{
+  opacity: 0
+}

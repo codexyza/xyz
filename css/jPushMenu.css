@@ -1,0 +1,214 @@
+/* General styles for all menus */
+.cbp-spmenu {
+    background: #0e1a35;
+    position: fixed;
+    z-index: 100000
+}
+
+.cbp-spmenu .logo {
+text-align: center;
+padding: 20px 0
+}
+.cbp-spmenu ul{
+    margin-top: 30px;
+    text-align: center
+}
+.cbp-spmenu ul i{
+    margin-right: 5px;
+    color: #ff8000
+}
+.cbp-spmenu a {
+    display: block;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 300;
+    border-left: 7px solid transparent;
+    font-weight: 600
+    
+}
+
+.cbp-spmenu a:hover,
+.cbp-spmenu a.active {
+    background: #122143;
+    text-decoration: none;
+    border-left: 7px solid #ff8000;
+}
+
+.cbp-spmenu a:active {
+
+}
+
+/* Orientation-dependent styles for the content of the menu */
+.cbp-spmenu-vertical {
+    width: 200px;
+    height: 100%;
+    top: 0;
+    z-index: 100000;
+}
+.cbp-spmenu-vertical li{
+
+}
+.cbp-spmenu-vertical a {
+    padding: 20px 0 20px 15px;
+    text-indent: 15px;
+    text-align: left;
+    font-size: 14px;
+    transition: all 0.5s;
+    border-bottom: 1px solid #0e172f
+}
+.cbp-spmenu-vertical textarea{
+    border: none;
+    background: #b7bbc3;
+    resize: none;
+    border-radius: 0;
+    height: 160px    
+    
+}
+.cbp-spmenu-vertical textarea:focus{
+    background: #b7bbc3;
+}
+.cbp-spmenu-vertical form button{
+    width: 50%;
+    margin: 10px auto;
+    display: block;
+    background: #ff8000;
+    border-radius: 50px;
+    color: #fff;
+    border: 2px solid transparent;
+    transition: all 0.5s
+}
+.cbp-spmenu-vertical form button:hover{
+    border: 2px solid #ff8000;
+    background: transparent;
+
+}
+
+/* Vertical menu that slides from the left or right */
+.cbp-spmenu-left {
+    left: 0px;
+}
+
+.cbp-spmenu-right {
+    right: -240px;
+}
+
+.cbp-spmenu-left.menu-open {
+    left: 0px;
+}
+
+.cbp-spmenu-right.menu-open {
+    right: 0px;
+}
+
+/* Horizontal menu that slides from the top or bottom */
+
+.cbp-spmenu-top {
+    top: -150px;
+}
+
+.cbp-spmenu-bottom {
+    bottom: -150px;
+}
+
+.cbp-spmenu-top.menu-open {
+    top: 0px;
+}
+
+.cbp-spmenu-bottom.menu-open {
+    bottom: 0px;
+}
+
+/* Push classes applied to the body */
+.push-body {
+    overflow-x: hidden;
+    position: relative;
+    left: 0;
+}
+
+.push-body-toright {
+    left: 240px;
+}
+
+.push-body-toleft {
+    left: -240px;
+}
+
+/* Transitions */
+.cbp-spmenu,
+.push-body {
+    -webkit-transition: all 0.3s ease;
+       -moz-transition: all 0.3s ease;
+            transition: all 0.3s ease;
+}
+
+/* Example media queries */
+@media screen and (max-width: 55.1875em) {
+    .cbp-spmenu-horizontal {
+        font-size: 75%;
+        height: 110px;
+    }
+
+    .cbp-spmenu-top {
+        top: -110px;
+    }
+
+    .cbp-spmenu-bottom {
+        bottom: -110px;
+    }
+}
+
+@media screen and (max-height: 26.375em) {
+    .cbp-spmenu-vertical {
+        font-size: 90%;
+        width: 190px;
+    }
+
+    .cbp-spmenu-left,
+    .push-body-toleft {
+        left: -190px;
+    }
+
+    .cbp-spmenu-right {
+        right: -190px;
+    }
+
+    .push-body-toright {
+        left: 190px;
+    }
+}
+body {
+    background: #444;
+  }
+  
+  #toggle {
+    width: 28px;
+    height: 30px;
+    margin: 30px auto;
+  }
+  
+  #toggle div {
+    width: 100%;
+    height: 5px;
+    background: rgb(0, 0, 0);
+    margin: 4px auto;
+    transition: all 0.3s;
+    backface-visibility: hidden;
+  }
+  
+  #toggle.on .one {
+    transform: rotate(45deg) translate(5px, 5px);
+  }
+  
+  #toggle.on .two {
+    opacity: 0;
+  }
+  
+  #toggle.on .three {
+    transform: rotate(-45deg) translate(7px, -8px);
+  }
+  button.toggle-menu{
+      background: none;
+      border:none;
+      outline: 0;
+      margin-left: 10px
+  }
